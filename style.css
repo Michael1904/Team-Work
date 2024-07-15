@@ -2,15 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
+
 header {
     background-color: #333;
     color: white;
@@ -32,35 +26,58 @@ nav a:hover {
     background-color: #555;
 }
 .hero {
-    background-image: url('hero-image.jpg');
+    background-image: url('./img/Hotel_exterior.png'); 
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 .hero button {
     padding: 15px 30px;
     font-size: 20px;
-    background-color: #ff9900;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     border: none;
     cursor: pointer;
 }
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+.about h2 {
+    margin-bottom: 20px;
+}
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
 .rooms {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 40px 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 .room {
-    width: 30%;
+    width: 90%;
+    max-width: 400px;
     margin: 20px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.room:hover {
+    transform: scale(1.05);
 }
 .room img {
     width: 100%;
@@ -81,6 +98,22 @@ nav a:hover {
     color: white;
     border: none;
     cursor: pointer;
+}
+.room-content button:hover {
+    background-color: #e68a00;
+}
+
+@media (min-width: 768px) {
+    .rooms {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .room {
+        width: 45%;
+        max-width: 300px;
+        margin: 20px;
+    }
 }
 footer {
     background-color: #333;
