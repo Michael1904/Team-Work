@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Hotel Name</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Stay</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#rooms">Rooms</a>
+        <a href="index.html#amenities">Amenities</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="content">
+        <h2>Booking Form</h2>
+        <form action="thankyou.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="room">Room Type:</label>
+            <select id="room" name="room">
+                <option value="luxury">Luxury Suite</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="premium">Premium Room</option>
+                <option value="standard">Standard Room</option>
+                <option value="economy">Economy Room</option>
+            </select>
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hotel Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
