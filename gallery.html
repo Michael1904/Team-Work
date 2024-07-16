@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header>
+        <h1>Hotel Room Gallery</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#rooms">Rooms</a>
+        <a href="index.html#amenities">Amenities</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="carousel">
+        <div><img src="room1.jpg" alt="Luxury Suite"></div>
+        <div><img src="room2.jpg" alt="Deluxe Room"></div>
+        <div><img src="room3.jpg" alt="Premium Room"></div>
+        <div><img src="room4.jpg" alt="Standard Room"></div>
+        <div><img src="room5.jpg" alt="Economy Room"></div>
+    </div>
+    <div class="gallery-section">
+        <h2>Luxury Suite</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="./rooms/Luxury_suite_bathroom.png" alt="Luxury Suite Image 1"></div>
+            <div class="gallery-item"><img src="./rooms/Luxury_suite_kitchen.png" alt="Luxury Suite Image 2"></div>
+            <div class="gallery-item"><img src="./rooms/Luxury_suite_living_room_1.png" alt="Luxury Suite Image 3"></div>
+        </div>
+    </div>
+    <div class="gallery-section">
+        <h2>Deluxe Room</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="./rooms/" alt="Deluxe Room Image 1"></div>
+            <div class="gallery-item"><img src="deluxe2.jpg" alt="Deluxe Room Image 2"></div>
+            <div class="gallery-item"><img src="deluxe3.jpg" alt="Deluxe Room Image 3"></div>
+        </div>
+    </div>
+    <div class="gallery-section">
+        <h2>Premium Room</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="./rooms/Premium_suite_bathroom.png" alt="Premium Room Image 1"></div>
+            <div class="gallery-item"><img src="./rooms/Premium_suite_bedroom.png" alt="Premium Room Image 2"></div>
+            <div class="gallery-item"><img src="./rooms/Premium_suite_living_room.png" alt="Premium Room Image 3"></div>
+        </div>
+    </div>
+    <div class="gallery-section">
+        <h2>Standard Room</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="standard1.jpg" alt="Standard Room Image 1"></div>
+            <div class="gallery-item"><img src="standard2.jpg" alt="Standard Room Image 2"></div>
+            <div class="gallery-item"><img src="standard3.jpg" alt="Standard Room Image 3"></div>
+        </div>
+    </div>
+    <div class="gallery-section">
+        <h2>Economy Room</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="./rooms/Economy_suite_bathroom.png" alt="Economy Room Image 1"></div>
+            <div class="gallery-item"><img src="./rooms/Economy_suite_kitchen.png" alt="Economy Room Image 2"></div>
+            <div class="gallery-item"><img src="./rooms/Economy_suite_living_room.png" alt="Economy Room Image 3"></div>
+        </div>
+    </div>
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="contact-info">
+                    <h3>Contact Us:</h3>
+                    <p>Email: <a href="mailto:info@vashsait.com">info@vashsait.com</a></p>
+                    <p>Phone: <a href="tel:+380123456789">+38 (012) 345-67-89</a></p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="social-media">
+                    <h3>Follow Us:</h3>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+                <div class="address">
+                    <h3>Address:</h3>
+                    <p>12345, Ukraine, Kyiv, Prykladna St, 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Your Site. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+        });
+    </script>
+</body>
+</html>
