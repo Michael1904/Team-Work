@@ -20,7 +20,7 @@
     </nav>
     <div class="content">
         <h2>Booking Form</h2>
-        <form action="thankyou.html" method="post">
+        <form id="bookingForm" action="thankyou.html" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
@@ -28,18 +28,19 @@
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone" required>
             <label for="room">Room Type:</label>
-            <select id="room" name="room">
-                <option value="luxury">Luxury Suite</option>
-                <option value="deluxe">Deluxe Room</option>
-                <option value="premium">Premium Room</option>
-                <option value="standard">Standard Room</option>
-                <option value="economy">Economy Room</option>
+            <select id="room" name="room" required>
+                <option value="luxury">Luxury Suite - $300 per night</option>
+                <option value="deluxe">Deluxe Room - $200 per night</option>
+                <option value="premium">Premium Room - $150 per night</option>
+                <option value="standard">Standard Room - $100 per night</option>
+                <option value="economy">Economy Room - $80 per night</option>
             </select>
             <label for="checkin">Check-in Date:</label>
             <input type="date" id="checkin" name="checkin" required>
             <label for="checkout">Check-out Date:</label>
             <input type="date" id="checkout" name="checkout" required>
-            <button type="submit">Submit</button></p>
+            <p>Total Price: $<span id="totalPrice">0</span></p>
+            <button type="submit">Submit</button>
         </form>
     </div>
     <footer id="contact">
@@ -70,5 +71,6 @@
         </div>
     </footer>
     
+        <script src="bookimg.js"></script>
 </body>
 </html>

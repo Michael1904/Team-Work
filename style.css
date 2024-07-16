@@ -8,29 +8,71 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 20px 0;
-    text-align: center;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+header .logo img {
+    padding: 5px 0;
+    height: 150px; /* Основний розмір логотипу */
+    max-width: 100%; /* Логотип не перевищує ширину контейнера */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
 nav {
     display: flex;
     justify-content: center;
     background-color: #444;
     padding: 10px 0;
+    flex-wrap: wrap;
+    transition: max-height 0.3s ease;
 }
+
 nav a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
 }
+
 nav a:hover {
     background-color: #555;
 }
+
 .hero {
     background-image: url('./img/Hotel_exterior.png'); 
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    height: 400px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +80,7 @@ nav a:hover {
     text-align: center;
     color: white;
 }
+
 .hero button {
     padding: 15px 30px;
     font-size: 20px;
@@ -46,18 +89,22 @@ nav a:hover {
     border: none;
     cursor: pointer;
 }
+
 .about {
     padding: 50px 20px;
     text-align: center;
 }
+
 .about h2 {
     margin-bottom: 20px;
 }
+
 .about p {
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
 }
+
 .rooms {
     display: flex;
     flex-direction: column;
@@ -66,6 +113,7 @@ nav a:hover {
     margin: 0 auto;
     max-width: 1200px;
 }
+
 .room {
     width: 90%;
     max-width: 400px;
@@ -76,22 +124,28 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: transform 0.3s;
 }
+
 .room:hover {
     transform: scale(1.05);
 }
+
 .room img {
     width: 100%;
 }
+
 .room-content {
     padding: 20px;
     text-align: center;
 }
+
 .room-content h3 {
     margin: 0 0 10px 0;
 }
+
 .room-content p {
     margin: 0 0 20px 0;
 }
+
 .room-content button {
     padding: 10px 20px;
     background-color: #ff9900;
@@ -99,6 +153,7 @@ nav a:hover {
     border: none;
     cursor: pointer;
 }
+
 .room-content button:hover {
     background-color: #e68a00;
 }
@@ -115,18 +170,12 @@ nav a:hover {
         margin: 20px;
     }
 }
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
 }
 
 .footer-container {
@@ -177,10 +226,26 @@ footer {
     text-align: center;
 }
 
+
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
+    header .logo img {
+        height: 100px; /* Основний розмір логотипу */
+        max-width: 100%; /* Логотип не перевищує ширину контейнера */
+    }
+    .burger-menu {
+        display: flex;
+    }
+    nav {
+        max-height: 0;
+        overflow: hidden;
+    }
+    nav.open {
+        max-height: 500px;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 15px;
+        width: 100%;
     }
 }
-
-

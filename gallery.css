@@ -1,0 +1,33 @@
+.carousel {
+    width: 80%;
+    margin: 50px auto;
+}
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.gallery-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.gallery-section h2 {
+    margin-bottom: 20px;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gallery-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}

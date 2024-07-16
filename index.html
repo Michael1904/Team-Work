@@ -5,107 +5,115 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <title>Bootstrap demo</title>
+  <title>Grand Vista</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="cards.css">
+    integrity="sha384-QWTKZjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="cards.css">
 </head>
 
 <body>
   <header>
-    <h1>Grand Vista</h1>
-</header>
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#rooms">Rooms</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-</nav>
-<div class="hero">
-    <button>Book Now</button>
-</div>
-<section class="about" id="about">
+    <div class="container">
+      <div class="logo">
+        <img src="./img/Logoo.png" alt="Grand Vista Logo">
+      </div>
+      <h1>Grand Vista</h1>
+      <div class="burger-menu" id="burgerMenu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#rooms">Rooms</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <button onclick="window.location.href='booking.html'">Book Now</button>
+  </div>
+  <section class="about" id="about">
     <h2>About Our Hotel</h2>
     <p>Welcome to our luxurious mountain hotel, a haven of tranquility and elegance nestled in the heart of nature. Our hotel offers the perfect blend of modern amenities and natural beauty, ensuring a memorable stay for all our guests. Whether you're here for a relaxing getaway, a business trip, or an adventurous holiday, we provide exceptional services and facilities to meet your needs. Enjoy breathtaking views, exquisite dining, and a range of activities designed to enrich your stay. Our dedicated staff is here to ensure your comfort and satisfaction, making your visit truly unforgettable.</p>
-</section>
-<section class="rooms" id="rooms">
+  </section>
+  <section class="rooms" id="rooms">
     <div class="room">
-        <img src="./img/Luxury_hotel_room.png" alt="Luxury Suite">
-        <div class="room-content">
-            <h3>Luxury Suite</h3>
-            <p>$300 per night</p>
-            <a href="./luxery.html"><button>View Details</button></a>
-        </div>
+      <img src="./img/Luxury_hotel_room.png" alt="Luxury Suite">
+      <div class="room-content">
+        <h3>Luxury Suite</h3>
+        <p>$300 per night</p>
+        <a href="./luxery.html"><button>View Details</button></a>
+      </div>
     </div>
     <div class="room">
-        <img src="./img/Deluxe_hotel_room.png" alt="Deluxe Room">
-        <div class="room-content">
-            <h3>Deluxe Room</h3>
-            <p>$200 per night</p>
-            <a href="deluxe.html"><button>View Details</button></a>
-        </div>
+      <img src="./img/Deluxe_hotel_room.png" alt="Deluxe Room">
+      <div class="room-content">
+        <h3>Deluxe Room</h3>
+        <p>$200 per night</p>
+        <a href="deluxe.html"><button>View Details</button></a>
+      </div>
     </div>
     <div class="room">
-        <img src="./img/Premium_hotel_room.png" alt="Premium Room">
-        <div class="room-content">
-            <h3>Premium Room</h3>
-            <p>$150 per night</p>
-            <a href="premium.html"><button>View Details</button></a>
-        </div>
+      <img src="./img/Premium_hotel_room.png" alt="Premium Room">
+      <div class="room-content">
+        <h3>Premium Room</h3>
+        <p>$150 per night</p>
+        <a href="premium.html"><button>View Details</button></a>
+      </div>
     </div>
     <div class="room">
-        <img src="./img/Standard_hotel_room.png" alt="Standard Room">
-        <div class="room-content">
-            <h3>Standard Room</h3>
-            <p>$100 per night</p>
-            <a href="standard.html"><button>View Details</button></a>
-        </div>
+      <img src="./img/Standard_hotel_room.png" alt="Standard Room">
+      <div class="room-content">
+        <h3>Standard Room</h3>
+        <p>$100 per night</p>
+        <a href="standard.html"><button>View Details</button></a>
+      </div>
     </div>
     <div class="room">
-        <img src="./img/Economy_hotel_room.png" alt="Economy Room">
-        <div class="room-content">
-            <h3>Economy Room</h3>
-            <p>$80 per night</p>
-            <a href="economy.html"><button>View Details</button></a>
-        </div>
+      <img src="./img/Economy_hotel_room.png" alt="Economy Room">
+      <div class="room-content">
+        <h3>Economy Room</h3>
+        <p>$80 per night</p>
+        <a href="economy.html"><button>View Details</button></a>
+      </div>
     </div>
-</section>
-
+  </section>
 
   <footer id="contact">
     <div class="footer-container">
-        <div class="footer-column">
-            <div class="contact-info">
-                <h3>Контакти:</h3>
-                <p>Email: <a href="mailto:info@vashsait.com">info@vashsait.com</a></p>
-                <p>Телефон: <a href="tel:+380123456789">+38 (012) 345-67-89</a></p>
-            </div>
+      <div class="footer-column">
+        <div class="contact-info">
+          <h3>Контакти:</h3>
+          <p>Email: <a href="mailto:info@vashsait.com">info@vashsait.com</a></p>
+          <p>Телефон: <a href="tel:+380123456789">+38 (012) 345-67-89</a></p>
         </div>
-        <div class="footer-column">
-            <div class="social-media">
-                <h3>Соціальні мережі:</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
-            </div>
-            <div class="address">
-                <h3>Адреса:</h3>
-                <p>12345, Україна, м. Київ, вул. Прикладна, 1</p>
-            </div>
+      </div>
+      <div class="footer-column">
+        <div class="social-media">
+          <h3>Соціальні мережі:</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
         </div>
+        <div class="address">
+          <h3>Адреса:</h3>
+          <p>12345, Україна, м. Київ, вул. Прикладна, 1</p>
+        </div>
+      </div>
     </div>
     <div class="footer-bottom">
-        <p>© 2024 Ваш Сайт. Всі права захищені.</p>
+      <p>© 2024 Ваш Сайт. Всі права захищені.</p>
     </div>
-</footer>
-
-
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
