@@ -1,8 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const burgerMenu = document.getElementById("burgerMenu");
-    const navMenu = document.getElementById("navMenu");
-
-    burgerMenu.addEventListener("click", function () {
-        navMenu.classList.toggle("open");
-    });
-});
+document.getElementById("burgerMenu").addEventListener("click", function() {
+    var navMenu = document.getElementById("navMenu");
+    if (navMenu.classList.contains("open")) {
+      navMenu.classList.remove("open");
+    } else {
+      navMenu.classList.add("open");
+    }
+  });
+  

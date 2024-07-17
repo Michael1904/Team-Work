@@ -48,7 +48,7 @@ header h1 {
     margin: 3px 0;
 }
 
-nav {
+nav.container {
     display: flex;
     justify-content: center;
     background-color: #444;
@@ -57,13 +57,13 @@ nav {
     transition: max-height 0.3s ease;
 }
 
-nav a {
+nav.container a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
 }
 
-nav a:hover {
+nav.container a:hover {
     background-color: #555;
 }
 
@@ -235,14 +235,14 @@ footer {
     .burger-menu {
         display: flex;
     }
-    nav {
+    nav.container {
         max-height: 0;
         overflow: hidden;
     }
-    nav.open {
+    nav.container.open {
         max-height: 500px;
     }
-    nav a {
+    nav.container a {
         display: block;
         text-align: center;
         padding: 15px;
